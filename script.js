@@ -5,7 +5,7 @@ let colorSelected;
 //Add a row
 function addR() {
     alert("Clicked Add Row")
-    var grid = index.getElementById("grid");
+    var grid = document.getElementById("grid");
     var row = grid.insertRow(0);
     var row1 = row.insertCell(0);
 }
