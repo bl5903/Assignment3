@@ -7,6 +7,7 @@ function addR() {
     alert("Clicked Add Row")
     var grid = index.getElementById("grid");
     var row = grid.insertRow(0);
+    var row1 = row.insertCell(0);
 }
 //Add a column
 function addC() {
