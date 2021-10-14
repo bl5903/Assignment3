@@ -14,6 +14,7 @@ var buttons = document.getElementsByTagName("button")
 addRow.addEventListener("click", addR);
 
 
+
 let grid = document.getElementById("grid");//call the grid id in index.html
 let tr = document.createElement("tr");
 grid.appendChild(tr);
@@ -22,6 +23,8 @@ function addR() {
      alert("Clicked Add Row")
      numRows += 1
      console.log(tr);
+=======
+    alert("Clicked Add Row")
 }
 //Add a column
 function addC() {
