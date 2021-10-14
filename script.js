@@ -2,12 +2,13 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected;
 
+
+let grid = document.getElementById("grid");//call the grid id in index.html
+let tr = document.createElement("tr");
+grid.appendChild(tr);
 //Add a row
 function addR() {
     alert("Clicked Add Row")
-    let grid = document.getElementById("grid");//call the grid id in index.html
-    let tr = document.createElement("tr");
-    grid.appendChild(tr);
 }
 //Add a column
 function addC() {
