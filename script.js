@@ -5,9 +5,9 @@ let colorSelected;
 //Add a row
 function addR() {
     alert("Clicked Add Row")
-    var grid = document.getElementById("grid");
-    var row = grid.insertRow(0);
-    var row1 = row.insertCell(0);
+    let grid = document.getElementById("grid");//call the grid id in index.html
+    let tr = document.createElement("tr");//create tr tags
+    document.querySelector("table").appendChild(tr);
 }
 //Add a column
 function addC() {
