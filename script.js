@@ -7,7 +7,7 @@ function addR() {
     alert("Clicked Add Row")
     let grid = document.getElementById("grid");//call the grid id in index.html
     let tr = document.createElement("tr");
-    grid.appendChild(tr)
+    grid.appendChild(tr);
 }
 //Add a column
 function addC() {
