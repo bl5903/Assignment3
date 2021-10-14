@@ -5,6 +5,11 @@ let colorSelected;
 //Add a row
 function addR() {
     alert("Clicked Add Row")
+    let grid = document.getElementById("grid");//call the grid id in index.html
+    let tbody = document.createElement("tbody");//create tbody tags
+    let tr = document.createElement("tr");
+    tbody.appendChild(tr)
+    document.querySelector("table").appendChild(tbody);
 }
 //Add a column
 function addC() {
