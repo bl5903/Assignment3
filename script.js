@@ -2,7 +2,7 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected;
 
-var buttons = document.getElementsByTagName("button")
+var button = document.getElementsByTagName("button")
     addRow = button[0],
     addCol = button[1],
     removeRow = button[2],
@@ -21,8 +21,8 @@ grid.appendChild(tr);
 //Add a row
 function addR() {
      alert("Clicked Add Row")
-     numRows += 1;
      console.log(tr);
+     numRows += 1;
 }
 //Add a column
 function addC() {
