@@ -12,7 +12,8 @@ function addR() {
      numRows++;
 }
 function addC() {
-    alert("Clicked Add Col")
+    //alert("Clicked Add Col")
+
 }
 
 //Remove a row
