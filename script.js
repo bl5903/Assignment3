@@ -20,6 +20,7 @@ function addC() {
       myCol.rows[i].appendChild(td);
     }
     numCols++;
+    return numRows;
 }
 
 //Remove a row
@@ -34,10 +35,16 @@ function removeC() {
 function selected(){
     colorSelected = document.getElementById("selectedID").value;
     console.log(colorSelected);
+    return colorSelected;
 }
 
 function fill(){
-    alert("Clicked Fill All")
+    //alert("Clicked Fill All")
+    let grid = document.getElementById("grid");
+    grid = grid.getElementsByTagName("td");
+    for (let i = 0; i < grid.length; i++){
+        grid[i].style.backgroundColor = colorSelected;
+    }
 }
 
 function clearAll(){
