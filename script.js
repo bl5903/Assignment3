@@ -21,8 +21,8 @@ grid.appendChild(tr);
 //Add a row
 function addR() {
      alert("Clicked Add Row")
+     numRows ++;
      console.log(tr);
-     numRows += 1;
 }
 //Add a column
 function addC() {
