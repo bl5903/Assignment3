@@ -4,7 +4,7 @@ let colorSelected;
 
 //Add a row
 function addR() {
-    alert("Clicked Add Row")
+     alert("Clicked Add Row")
 }
 //Add a column
 function addC() {
