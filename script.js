@@ -6,14 +6,19 @@ let colorSelected;
 function addR() {
      //alert("Clicked Add Row")
      var myRow = document.getElementById("grid");
-     var newRow = myRow.insertRow(0);
-     var newCell = newRow.insertCell(0);
+     var newRow = myRow.insertRow(-1);
+     var newCell = newRow.insertCell(-1);
      //increase count of rows
      numRows++;
 }
 function addC() {
     //alert("Clicked Add Col")
-
+    let myCol = document.getElementById("grid");
+    for (let i=0; i<myCol.rows.length; i++){
+      let td = document.createElement("td");
+      myCol.rows[i].appendChild(td);
+    }
+    numCols++;
 }
 
 //Remove a row
