@@ -24,7 +24,7 @@ function addC() {
 
 //Remove a row
 function removeR() {
-    alert("Clicked Remove Row")
+    //alert("Clicked Remove Row")
 }
 //Remove a column
 function removeC() {
