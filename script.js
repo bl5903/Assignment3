@@ -10,6 +10,7 @@ function addR() {
      var newCell = newRow.insertCell(-1);
      //increase count of rows
      numRows++;
+     return numRows;
 }
 function addC() {
     //alert("Clicked Add Col")
