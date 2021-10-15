@@ -3,13 +3,13 @@ let numCols = 0;
 let colorSelected;
 
 var buttonPress = document.getElementsByTagName("button")
-    addRow = button[0],
-    addCol = button[1],
-    removeRow = button[2],
-    removeCol = button[3],
-    fillAll = button[4],
-    clearAll = button[5],
-    fillUn = button[6];
+    addRow = buttonPress[0],
+    addCol = buttonPress[1],
+    removeRow = buttonPress[2],
+    removeCol = buttonPress[3],
+    fillAll = buttonPress[4],
+    clearAll = buttonPress[5],
+    fillUn = buttonPress[6];
 
 //when clicked it calls the add row function
 addRow.addEventListener("click", addR);
