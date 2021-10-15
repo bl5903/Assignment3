@@ -6,13 +6,16 @@ let colorSelected;
 function addR() {
      //alert("Clicked Add Row")
      var myRow = document.getElementById("grid");
-     var newRow = myRow.insertRow(0);
-     var newCell = newRow.insertCell(0);
+     var newRow = myRow.insertRow(-1);
+     var newCell = newRow.insertCell(-1);
      //increase count of rows
      numRows++;
+     return numRows;
 }
 function addC() {
     //alert("Clicked Add Col")
+    
+    
 
 }
 
