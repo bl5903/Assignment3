@@ -23,8 +23,6 @@ function addR() {
      alert("Clicked Add Row")
      console.log(tr);
      numRows += 1;
-=======
-    alert("Clicked Add Row")
 }
 //Add a column
 function addC() {
