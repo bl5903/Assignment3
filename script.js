@@ -20,6 +20,7 @@ function addC() {
       myCol.rows[i].appendChild(td);
     }
     numCols++;
+    return numRows;
 }
 
 //Remove a row
@@ -34,6 +35,7 @@ function removeC() {
 function selected(){
     colorSelected = document.getElementById("selectedID").value;
     console.log(colorSelected);
+    return colorSelected;
 }
 
 function fill(){
