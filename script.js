@@ -9,19 +9,19 @@ function addR() {
      let tr = document.createElement("tr");
      if(numCols == 0){
        let td = document.createElement("td");
-       tr.appendChild(td);
        td.onclick = function() {
             this.style.backgroundColor = document.getElementById("selectedID").value;
         };
+       tr.appendChild(td);
        numCols++;
      }
      else{
        for(let i=0; i<numCols; i++){
          let td = document.createElement("td");
-         tr.appendChild(td);
          td.onclick = function() {
               this.style.backgroundColor = document.getElementById("selectedID").value;
           };
+         tr.appendChild(td);
        }
      }
      myRow.appendChild(tr)
@@ -32,10 +32,10 @@ function addC() {
     let myCol = document.getElementById("grid");
     for (let i=0; i<myCol.rows.length; i++){
       let td = document.createElement("td");
-      myCol.rows[i].appendChild(td);
       td.onclick = function() {
            this.style.backgroundColor = document.getElementById("selectedID").value;
        };
+      myCol.rows[i].appendChild(td);
     }
     numCols++;
     return numRows;
