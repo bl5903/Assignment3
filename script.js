@@ -4,13 +4,13 @@ let colorSelected;
 
 //Add a row
 function addR() {
-     //alert("Clicked Add Row")
-     var myRow = document.getElementById("grid");
-     var newRow = myRow.insertRow(-1);
-     var newCell = newRow.insertCell(-1);
-     //increase count of rows
-     numRows++;
-     return numRows;
+    //alert("Clicked Add Row")
+    let myRow = document.getElementById("grid");
+    let newRow = myRow.insertRow(-1);
+    let newCell = newRow.insertCell(-1);
+    //increase count of rows
+    numRows++;
+    return numRows;
 }
 function addC() {
     //alert("Clicked Add Col")
@@ -62,14 +62,14 @@ function fill(){
 }
 
 function clearAll(){
-    alert("Clicked Clear All")
-    var delete_grid = document.getElementById("grid");
+    //alert("Clicked Clear All")
+    let delete_grid = document.getElementById("grid");
     delete_grid.innerHTML = "";
 }
 
 function fillU(){//Similar to fill all function
   //basically filling up any empty circles
-    alert("Clicked Fill All Uncolored")
+  //alert("Clicked Fill All Uncolored")
   let grid = document.getElementById("grid");
   let uncolor_grid =
   grid = grid.getElementsByTagName('td');
