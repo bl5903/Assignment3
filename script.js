@@ -25,7 +25,14 @@ function addC() {
 
 //Remove a row
 function removeR() {
-    alert("Clicked Remove Row")
+    //alert("Clicked Remove Row")
+    if(numRows < 1){
+        return;
+    }
+    else{
+        document.getElementById("grid").deleteRow(numRows - 1);
+        numRows--;
+    }
 }
 //Remove a column
 function removeC() {
