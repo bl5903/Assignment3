@@ -10,12 +10,18 @@ function addR() {
      if(numCols == 0){
        let td = document.createElement("td");
        tr.appendChild(td);
+       td.onclick = function() {
+            this.style.backgroundColor = document.getElementById("selectedID").value;
+        };
        numCols++;
      }
      else{
        for(let i=0; i<numCols; i++){
          let td = document.createElement("td");
          tr.appendChild(td);
+         td.onclick = function() {
+              this.style.backgroundColor = document.getElementById("selectedID").value;
+          };
        }
      }
      myRow.appendChild(tr)
@@ -27,6 +33,9 @@ function addC() {
     for (let i=0; i<myCol.rows.length; i++){
       let td = document.createElement("td");
       myCol.rows[i].appendChild(td);
+      td.onclick = function() {
+           this.style.backgroundColor = document.getElementById("selectedID").value;
+       };
     }
     numCols++;
     return numRows;
