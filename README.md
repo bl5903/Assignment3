@@ -1,3 +1,10 @@
 # Assignment3
-Carlos Genis 
-GitHub.com/CarlosGenis
+
+Team Members
+Carlos Genis, UserName CarlosGenis\
+
+Bill Leung, UserName bl5903\
+
+Rachel Ishak, UserName rachel455\
+
+Kevin Fernandez, UserName KevinFernandez16\
