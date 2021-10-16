@@ -4,13 +4,22 @@ let colorSelected;
 
 //Add a row
 function addR() {
-    //alert("Clicked Add Row")
-    let myRow = document.getElementById("grid");
-    let newRow = myRow.insertRow(-1);
-    let newCell = newRow.insertCell(-1);
-    //increase count of rows
-    numRows++;
-    return numRows;
+     //alert("Clicked Add Row")
+     let myRow = document.getElementById("grid");
+     let tr = document.createElement("tr");
+     if(numCols == 0){
+       let td = document.createElement("td");
+       tr.appendChild(td);
+       numCols++;
+     }
+     else{
+       for(let i=0; i<numCols; i++){
+         let td = document.createElement("td");
+         tr.appendChild(td);
+       }
+     }
+     myRow.appendChild(tr)
+     numRows++;
 }
 function addC() {
     //alert("Clicked Add Col")
