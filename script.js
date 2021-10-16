@@ -39,7 +39,7 @@ function selected(){
 }
 
 function fill(){
-    //alert("Clicked Fill All")
+    //alert("Clicked Fill All");
     let grid = document.getElementById("grid");
     grid = grid.getElementsByTagName("td");
     for (let i = 0; i < grid.length; i++){
