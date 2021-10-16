@@ -79,7 +79,6 @@ function clearAll(){
 function fillU(){
     //alert("Clicked Fill All Uncolored")
     let grid = document.getElementById("grid");
-    let uncolor_grid =
     grid = grid.getElementsByTagName('td');
     for(let i = 0; i < grid.length; i++){
         if(grid[i].style.backgroundColor == ""){
