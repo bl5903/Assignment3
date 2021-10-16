@@ -67,13 +67,14 @@ function clearAll(){
     delete_grid.innerHTML = "";
 }
 
-function fillU(){//Similar to fill all function
-  //basically filling up any empty circles
-  //alert("Clicked Fill All Uncolored")
-  let grid = document.getElementById("grid");
-  let uncolor_grid =
-  grid = grid.getElementsByTagName('td');
-  for(let i = 0; i < grid.length; i++){
-    grid[i].style.backgroundColor = colorSelected;
-  }
+function fillU(){
+    //alert("Clicked Fill All Uncolored")
+    let grid = document.getElementById("grid");
+    let uncolor_grid =
+    grid = grid.getElementsByTagName('td');
+    for(let i = 0; i < grid.length; i++){
+        if(grid[i].style.backgroundColor == ""){
+            grid[i].style.backgroundColor = colorSelected;
+        }
+    }
 }
