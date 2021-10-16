@@ -1,6 +1,6 @@
 # Assignment3
 
-Github Repo Link: https://github.com/bl5903/Assignment3 <br />
+Github Repo Link: https://bl5903.github.io/Assignment3/ <br />
 
 Team Members<br />
 Carlos Genis, UserName CarlosGenis
