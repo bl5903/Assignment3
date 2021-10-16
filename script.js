@@ -37,13 +37,18 @@ function selected(){
 }
 
 function fill(){
-    alert("Clicked Fill All")
 }
 
 function clearAll(){
     alert("Clicked Clear All")
 }
 
-function fillU(){
+function fillU(){//Similar to fill all function
+  //basically filling up any empty circles
     alert("Clicked Fill All Uncolored")
+  let grid = document.getElementById("grid");
+  grid = grid.getElementsByTagName('td');
+  for(let i = grid.length - 1; i >= 0 ; i--){
+    grid[i].style.backgroundColor = colorSelected;
+  }
 }
