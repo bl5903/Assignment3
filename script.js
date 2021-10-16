@@ -39,18 +39,27 @@ function selected(){
 }
 
 function fill(){
+  //alert("Clicked Fill All");
+let grid = document.getElementById("grid");
+grid = grid.getElementsByTagName("td");
+for (let i = 0; i < grid.length; i++){
+    grid[i].style.backgroundColor = colorSelected;
+}
 }
 
 function clearAll(){
     alert("Clicked Clear All")
+    var delete_grid = document.getElementById("grid");
+    delete_grid.innerHTML = "";
 }
 
 function fillU(){//Similar to fill all function
   //basically filling up any empty circles
     alert("Clicked Fill All Uncolored")
   let grid = document.getElementById("grid");
+  let uncolor_grid =
   grid = grid.getElementsByTagName('td');
-  for(let i = grid.length - 1; i >= 0 ; i--){
+  for(let i = 0; i < grid.length; i++){
     grid[i].style.backgroundColor = colorSelected;
   }
 }
