@@ -36,7 +36,7 @@ function removeR() {
 }
 //Remove a column
 function removeC() {
-    alert("Clicked Remove Col")
+    //alert("Clicked Remove Col")
 }
 //sets global var for selected color
 function selected(){
