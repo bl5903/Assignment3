@@ -48,7 +48,8 @@ function removeR() {
         return;
     }
     else{
-        document.getElementById("grid").deleteRow(numRows - 1);
+        let row = document.getElementById("grid")
+        row.deleteRow(numRows - 1);
         numRows--;
     }
 }
