@@ -1,6 +1,6 @@
 # Assignment3
 
-Team Members
+Team Members<br />
 Carlos Genis, UserName CarlosGenis
 
 Bill Leung, UserName bl5903
